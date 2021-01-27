@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+}
+
+.header{
+    background-color: white;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+.social-icon{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 200px;
+}
+
+.social-icon li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 0.3rem;
+}
+
+.Mcircle{
+    background-color: rgb(197, 177, 149);
+    padding: 1.5rem;
+    border-radius: 5rem;
+    color: white;
+    font-size: 1rem !important;
+}
+
+.menu, .menu h2{
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.menu{
+    top: 45%;
+    right: 100px;
+    position: absolute;
+}
+
+.menu h2{
+    margin-right: 1rem;
+    font-weight: 100;
+}
+
+.menu-icon{
+    font-size: 5rem;
+}
+
+#menulist{
+    padding: 2rem;
+    display: none;
+    border-top: 1px solid rgb(204, 204, 204);
+    z-index: 100;
+    overflow: auto;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left:0;
+}
+
+#menulist li{
+    list-style: none;
+    margin: 3rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.mar{
+    background-color: rgb(204, 204, 204);
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 85vh;
+}
+
+.mar-content{
+    width: 90vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mar-head{
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.mar-text{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    border: none;
+    text-transform: capitalize;
+    padding: 2rem;
+    width: 18rem;
+}
+
+.mar-btn1{
+    background-color: rgb(197, 177, 149);
+    color: white;
+}
+
+.mar-btn2{
+    color: black;
+    background-color: white;
+    text-align: left;
+}
+
+.digital{
+    height: 100vh;
+    background-image: linear-gradient(to right , rgba(205, 202, 192, 1), rgba(205, 202, 192,0.3)),
+     url(./Img/meeting1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.digital-content{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.digi-head{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.digi-text{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+/******* service *****/
+.services {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.services h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.ser-sub-txt{
+    color: rgb(232, 163, 165);
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+
+.service-container{
+    margin: auto;
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding: 1rem 5rem;
+    width: 80vw;
+    justify-content: center;
+}
+
+.item-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.item-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1rem;
+}
+
+.content-item1, .content-item2{
+    padding: 1rem;
+}
+
+.item-head, .item2-head{
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.item-head{
+    text-align: right;
+}
+
+.item2-head{
+    text-align: left;
+}
+
+.item-txt, .item2-txt{
+    color: rgb(232, 163, 165);
+    text-align: justify;
+    font-size: 1.4rem;
+    word-break: break-all;
+}
+
+.item-image{
+    align-self: center;
+}
+
+.scircle{
+    background-color: rgb(232, 163, 165);
+    color: white;
+    padding: 2rem;
+    font-size: 4rem !important;
+    border-radius: 50%;
+}
+
+/****** testimony ********/
+
+.testimonial{
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+     url(./Img/testimonial.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    height:100vh;
+}
+
+.testimonial h2{
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.testimony{
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    align-self: center;
+    grid-column-gap: 10rem;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+.user-icon{
+    font-weight: 100 !important;
+    margin-bottom: 3rem;
+    font-size: 9rem !important;
+}
+
+.testimony h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+.testimony h3{
+    font-size: 2rem;
+}
+
+/******** blog **************/
+
+.blog{
+    background-color:  #F0F0F0;	
+    text-align: center;
+    padding: 6rem;
+}
+
+ .blog-head h2{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.blog-head p{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.blog-content{
+    display:grid;
+    grid-template-columns: repeat(3, 30rem);
+    grid-column-gap: 3rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.item-blog{
+    display: grid;
+    grid-template-rows: 15rem 20rem;
+    margin: 0 auto;
+}
+
+.item1-blog{
+    display: grid;
+    grid-template-columns: 7rem 23rem;
+    margin: 0 auto;
+}
+
+.blog-img{
+    height: 15rem;
+    width: 30rem;
+}
+
+.left{
+    background-color: rgb(234, 227, 217);
+    font-weight: 100;
+    color:rgb(176, 149, 117);
+    padding: 4rem 0;
+}
+
+.left h2{
+    font-size: 3rem;
+}
+
+.left h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.right{
+    padding: 2rem 3rem ;
+    text-align: left;
+    background-color: white;
+}
+
+.right h3{
+    font-size: 2rem;
+}
+
+.right p{
+    color: rgb(163, 163, 163);
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+
+/*** footer ***/ 
+
+.foo{
+    background-color: black;
+    height: 80vh;
+    position: relative;
+}
+
+.footer-content{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-content h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+input[type=text]{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: none;
+    flex-basis: 55%;
+}
+
+.foo-in{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.foo-btn{
+    background-color: rgb(197, 177, 149);
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    padding: 2rem;
+    width: 12rem;
+}
+
+.foo-nav a{
+    padding: 0 3rem;
+    font-size: 1.2rem;
+}
+
+
+
+/********* media queries ********/
+
+@media (max-width:310px){
+    .header, .right{
+        padding: 1rem 2rem;
+    }
+    .logo{
+        height: 2rem;
+    }
+    .social-icon{
+        right: 10rem;
+    }
+    
+    .Mcircle{
+        font-size: 0.7rem !important;
+        padding: 0.7rem;
+    }
+    
+    .menu{
+        top: 30%;
+        right: 20px;
+    }
+
+    .mar{
+        height: 95vh;
+    }
+
+    .btn{
+        margin-bottom: 2rem;
+    }
+
+    .service-container{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .testimonial{
+        padding-top: 5rem;
+    }  
+        
+    .testimony{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
+        grid-row-gap: 2rem;
+        margin-top: 5rem;
+    }
+    
+    .testimonial h2, .left h2{
+        font-size: 2rem;
+    }
+    
+    .user-icon{
+        margin-bottom: 1rem;
+        font-size: 3rem !important;
+    }
+        
+    .testimony h4{
+        font-size: 1.3rem;
+    }
+        
+    .blog-content{
+        grid-template-rows: repeat(3, 30rem);
+        grid-template-columns: 20rem;
+        grid-row-gap: 1rem;
+    }
+
+    .item-blog{
+        grid-template-rows: 15rem 15rem;
+    }
+
+    .item1-blog{
+        grid-template-columns: 5rem 15rem;
+    }
+
+    .blog-img{
+        height: 15rem;
+        width: 20rem;
+    }
+
+    .left h3, .right p{
+        font-size: 1rem;
+    }
+
+    .right h3{
+        font-size: 1.5rem;
+    }
+
+    input[type=text]{
+        padding: 2rem;
+        border: none;
+    }
+
+    .foo-in{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foo-btn{
+        text-transform: capitalize;
+        padding: 2rem;
+        width: 12rem;
+        align-self: center;
+        margin: 1rem 0;
+    }
+
+    .foo-nav a{
+        padding: 0 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width:640px) {
+    .header{
+        padding: 1.5rem 2rem;
+    }
+        
+    .logo{
+        height: 2.5rem;
+    }
+    .social-icon{
+        right: 10rem;
+    }
+    
+    .Mcircle{
+        font-size: 1rem !important;
+        padding: 1rem;
+    }
+    
+    .menu{
+        top: 35%;
+        right: 20px;
+        position: absolute;
+    }
+    
+    .menu h2{
+        margin-right: 1rem;
+        font-weight: 100;
+    }
+    
+    .menu-icon{
+        font-size: 5rem;
+    }
+
+    .mar{
+        height: 97vh;
+    }
+
+    .btn{
+        margin-bottom: 2rem;
+     }
+
+     .digital-content{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    
+    .digi-head{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    .service-container{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
+        grid-row-gap: 1rem;
+        border: 1px solid red;
+    } 
+
+    .testimonial{
+        padding-top: 5rem;
+    }
+
+    .testimonial h2{
+        margin-bottom: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .testimony{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 30rem;
+        align-self: center;
+        margin: 3rem auto;
+        grid-row-gap: 2rem;
+        justify-content: center;
+    }
+
+    .user-icon{
+        font-weight: 100 !important;
+        margin-bottom: 1rem;
+        font-size: 3rem !important;
+    }
+
+    .testimony h4{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .testimony h3{
+        font-size: 2rem;
+    }
+    
+    .blog-head p{
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+
+   .blog-content{
+        grid-template-rows: repeat(3, 34rem);
+        grid-template-columns: auto;
+        grid-row-gap: 3rem;
+    }
+
+   .item-blog{
+        grid-template-rows: 15rem 20rem;
+    }
+
+   .item1-blog{
+        grid-template-columns: repeat(1fr 2fr);
+    }
+
+    .blog-img{
+        height: 15rem;
+        width: 30rem;
+    }
+
+   .right{
+        padding: 2rem 1rem;
+    }
+    
+    .foo-in{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
+    .foo-in{
+        left: -20%;
+    }
+    
+    .foo-btn{
+        width: 10rem;
+    }
+    
+} 
+
+@media (min-width:768px) and (max-width: 1024px){
+    .testimony{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
+        grid-row-gap: 4rem;
+    }
+
+    .user-icon{
+        font-weight: 100 !important;
+        margin-bottom: 1rem;
+        font-size: 5rem !important;
+    }
+    
+    .testimony p{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .testimony h3{
+        font-size: 3rem;
+    }
+
+    .blog-content{
+        grid-template-rows: repeat(3, 34rem);
+        grid-template-columns: auto;
+        grid-row-gap: 3rem;
+    }
+
+    input[type=text]{
+        width: 70%;
+    }
+    
+    .foo-in{
+        left: -10%;
+    }
+    
+    .foo-btn{
+        width: 10rem;
+    }
+     
+    .foo-nav a{
+        padding: 0 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
